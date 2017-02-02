@@ -15,8 +15,8 @@
     }
 
      @font-face{
-        font-family:'cornerstone';
-        src: url('../font/Cornerstone Regular.ttf');
+        font-family:'logo';
+        src: url('../font/BRLNSDB.TTF');
 
     }
  @keyframes layer2Anim {
@@ -81,20 +81,23 @@
     animation: layer4Anim 15s infinite;
 }
 .slideOverlay {
-    background-image: url(slideshow/overlay.png);
     background-attachment: fixed;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    font-family: 'logo';
+  background-color: rgba(255,255,255,0.1);
+
 }
 .slideOverlay p {
     position: relative;
     font-size: 6vw;
-    color: #fff;
-    text-shadow: 3px 3px 6px #000;
+    color: black;
+    text-shadow: 3px 3px 6px #fff;
     text-align: center;
+    
     top: 30%;
 }
 
