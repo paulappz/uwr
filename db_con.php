@@ -1,10 +1,10 @@
 <?php
 /* Database config  */
 
-$db_host		= getenv('DB_HOSTNAME_UWR');
-$db_user		= getenv('DB_USER_UWR');
-$db_pass		= getenv('DB_PASS_UWR');
-$db_database	= getenv('DB_SCHEMA_UWR'); 
+$db_host		= getenv('Data Source');
+$db_user		= getenv('User Id');
+$db_pass		= getenv('Password');
+$db_database	= getenv('Database'); 
 
 // End config  
 
