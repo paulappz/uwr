@@ -148,7 +148,7 @@ document.forms["myForm2"]["email"].focus() ;
 
 
     
-    var end = new Date('02/01/2017 8:00 AM');
+    var end = new Date('02/01/2017 11:59 PM');
 
     var _second = 1000;
     var _minute = _second * 60;
@@ -162,7 +162,7 @@ document.forms["myForm2"]["email"].focus() ;
         if (distance < 0) {
 
             clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+            document.getElementById('clock').innerHTML = 'EXPIRED!';
 
             return;
         }

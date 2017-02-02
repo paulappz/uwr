@@ -22,11 +22,9 @@ if (isset($_POST['submit'])) {
  $row=$query->fetch_array();
  
  $count = $query->num_rows; // if email/password are correct returns must be 1 row
-  $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-echo  password_verify($hashed_password, $row['user_password']);
 
 
- if ($count==1) {
+ if (password_verify($password, $row['user_password']) && $count==1) {
   $_SESSION['userSession'] = $row['user_id'];
   $_SESSION['userSession_fullname'] = $row['user_fullname'];
   $_SESSION['userSession_username'] = $row['user_username'];
@@ -35,10 +33,11 @@ echo  password_verify($hashed_password, $row['user_password']);
      $_SESSION['userSession_status'] = $row['Reg_status']; 
   header("Location: profile.php");
  } else {
- /* $msg =   echo "<div id='errorBox'>
-     Invalid Username or Password !
-    </div>";
-  */  
+ $msg = 'Invalid Username or Password !';
+  echo "<script language='javascript'> alert('" .$msg. "');
+window.location = 'index.html';
+</script>";
+  
  }
  $con->close();
 }

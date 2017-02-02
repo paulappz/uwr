@@ -30,24 +30,29 @@ if(isset($_POST['submit'])){
  $query=" INSERT INTO `uwr_users`( `user_fullname`, `user_username`, `user_password`, `user_email`, `user_state`) VALUES ('$fullname','$username','$hashed_password','$email','$selectstate') ";
 
   if ($con->query($query)) {
-    /*$msg =*/ echo "<div id='errorBox'>
-     successfully registered !
-     </div>";
-      header('Location: profile.html');
+    /*$msg =*/
+    
+    $msg = 'successfully registered!, You can now login';
+  echo "<script language='javascript'> alert('" .$msg. "');
+window.location = 'index.html';
+</script>";
     exit();
      
   }else {
-   /*$msg =*/ echo "<div id='errorBox'>
-       error while registering !
-     </div>";
+         $msg = 'error while registering!';
+  echo "<script language='javascript'> alert('" .$msg. "');
+window.location = 'index.html';
+</script>";
+
   }
   
  } else {
   
-  
- /*$msg =*/ echo "<div id='errorBox'>
-     sorry email already taken !
-    </div>";
+      $msg = 'sorry email already taken!';
+  echo "<script language='javascript'> alert('" .$msg. "');
+window.location = 'index.html';
+</script>";
+
    
  }
  
