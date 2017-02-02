@@ -406,7 +406,7 @@ li{
 
 }
 .whats{
-    background-image: url(../img/icon/fbk-b2.png);
+    background-image: url(../img/icon/insta-b2.png);
 
 }
 .insta{  background-image: url(../img/icon/linkedin-b2.png);
@@ -439,7 +439,7 @@ li{
 
 }
 .whats:hover{
-    background-image: url(../img/icon/fbk2.png);
+    background-image: url(../img/icon/insta3.png);
 
 }
 .insta:hover{  background-image: url(../img/icon/linkedin2.png);
