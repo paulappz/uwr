@@ -1,9 +1,9 @@
 <?php
 /* Database config  */
 
-$db_host		= getenv('DB_HOSTNAME');
-$db_user		= getenv('DB_USER');
-$db_pass		= getenv('DB_PASS');
+$db_host		= getenv('DB_HOSTNAME_UWR');
+$db_user		= getenv('DB_USER_UWR');
+$db_pass		= getenv('DB_PASS_UWR');
 $db_database	= getenv('DB_SCHEMA_UWR'); 
 
 // End config  
