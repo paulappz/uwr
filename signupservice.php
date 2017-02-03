@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
  
  if ($count==0) {
   
- $query=" INSERT INTO `uwr_users`( `user_fullname`, `user_username`, `user_password`, `user_email`, `user_state`, `uploaded_img`, `uwrsocial_img`) VALUES ('$fullname','$username','$hashed_password','$email','$selectstate','','') ";
+ $query=" INSERT INTO `uwr_users`( `user_fullname`, `user_username`, `user_password`, `user_email`, `user_state`,`Reg_status`,`uploaded_img`, `uwrsocial_img`) VALUES ('$fullname','$username','$hashed_password','$email','$selectstate','0','','') ";
 
   if ($con->query($query)) {
     /*$msg =*/
