@@ -723,24 +723,13 @@ height: 24px;
     margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .tech-slideshow {
   height: 80px;
 }
 
 .tech-slideshow > div {
   height: 80px;
-  background: url(../img/spon.png);
+  background: url(../img/sponsorban2.png);
 
 }
 
