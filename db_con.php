@@ -10,6 +10,7 @@ $db_database	= getenv('DB_SCHEMA_UWR');
 Database=;Data Source=us-cdbr-azure-southcentral-f.cloudapp.net;User Id=b90cc7dd1debdf;Password=a049a30e
 // End config  
 
+
 $db_host		= "localhost";
 $db_user		= "root";
 $db_pass		= "";

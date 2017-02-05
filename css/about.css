@@ -2,6 +2,7 @@
 body{
     background-color: black;
       font-family: 'Jura', sans-serif;
+	  color: wheat;
 }
 .form_abt
 {
@@ -12,7 +13,6 @@ margin-top:8%;
 text-align: left;
 background:black;
 padding-left:10px;
-color: white;
 letter-spacing: 1px;
    
 }

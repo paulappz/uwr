@@ -480,14 +480,18 @@ font-family: 'Jura', sans-serif;
     padding-top:10px;
 }
 
-.ghs{
+.ghs,.copy{
     width:300px;
     margin: 0 auto;
     font-family: 'Jura', sans-serif;
     font-size: 11px;
     margin-top:20px;
-    color:white;}
+    color:white;
+    text-align: center;}
 
+    copy{
+    width:200px;
+    }
  .subscribe .info input,  .subscribe .enter input{
 
 height:25px;
@@ -516,7 +520,7 @@ margin-left:30px;
 
 
 .tech-slideshow {
-  height: 100px;
+  height: 65px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -525,11 +529,9 @@ margin-left:30px;
 }
 
 .tech-slideshow > div {
-  height: 100px;
-  width: 2526px;
-  background: url(../img/spon.png);
+  width: 3000px;
+  background: url(../img/spon2.png);
   position: absolute;
-  top: 0;
   left: 0;
   height: 100%;
   transform: translate3d(0, 0, 0);
@@ -719,19 +721,10 @@ height: 24px;
 }
 .evecal{
     width:700px;
-    height: 500px;
+    height: 250px;
     margin: 0 auto;
 }
 
-.tech-slideshow {
-  height: 80px;
-}
-
-.tech-slideshow > div {
-  height: 80px;
-  background: url(../img/sponsorban2.png);
-
-}
 
 
 
@@ -877,7 +870,7 @@ height: 24px;
     line-height: 20px;
 }
 .evecal{
-    width:400px;
+    width:250px;
     height: 500px;
     margin: 0 auto;
 }
@@ -972,20 +965,6 @@ margin-left:30px;
 
 
 
-
-
-
-
-
-.tech-slideshow {
-  height: 60px;
-}
-
-.tech-slideshow > div {
-  height: 60px;
-  background: url(../img/spon.png);
-
-}
 
 
 .form_div
@@ -1146,13 +1125,19 @@ height: 16px;
     font-size:6px;
 }
 
+.evecal{
+    width:250px;
+    height: 750px;
+    margin: 0 auto;
+}
 
 
+.evebanner{
+    height: 750px;
+}
 
 .evecalender{
-
     height: 500px;
-
 }
 
 .evecalender li{
@@ -1266,15 +1251,6 @@ margin-left:10px;
 
 
 
-    .tech-slideshow {
-  height: 50px;
-}
-
-.tech-slideshow > div {
-  height: 50px;
-  background: url(../img/spon.png);
-
-}
 
 
 .form_div

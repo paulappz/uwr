@@ -16,13 +16,14 @@
     <meta charset="utf-8">
     <title>UWR- Urban Warrior Race</title>
      <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
-     <link href="css/badge.css" rel="stylesheet">
+
       <script type="text/javascript" src="appjs/jquery-3.1.1.min.js"></script>
      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="js/jquery.min.js"></script>
   <script src="js/jquery.Jcrop.js"></script>
  <link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
    <script src="appjs/badge-crop.js"></script>
+        <link href="css/badge.css" rel="stylesheet">
    
 </head>
 <body>
@@ -40,7 +41,7 @@
         <div class="container1"> 
                 
         <div class="navprof">
-           <a href="#" class="badgenav"> <div class="contnav cnpos31"> Get Badge </div></a>
+           <a href="#" class="badgenav"> <div style="background-color:black; color:wheat"  class="contnav cnpos31"> Get Badge </div></a>
           
              </div>
             
@@ -48,8 +49,8 @@
    <?php            
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	$targ_w = 250;
-    $targ_h = 200;
+	$targ_w = 65;
+    $targ_h = 65;
 	$jpeg_quality = 90;
     
 	$src = $_SESSION['userimg'];
@@ -62,10 +63,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	imagejpeg($dst_r,$src,$jpeg_quality);
 
 
-echo "<div  class='cont badge'> 
- <canvas width='240' height='305' id='canvas'>Hello</canvas>
+echo "<div  class='cont badge' style='background-color:wheat; color:wheat'> 
+        <canvas width='209' height='339' id='canvas' style='border-radius:33px; color:wheat'>Hello</canvas>
 
- <a href='#' class='button' id='btn-download'>Download</a>
+ <a href='#' class='button' id='btn-download'><div style='margin:0 auto'>Download</div></a>
  
   </div> 
   <div class='bckdiv'><a id='bckbtn' href='profile.php'>Back to Profile</a></div>
@@ -79,12 +80,9 @@ echo "<div  class='cont badge'>
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
-var frameno = Math.floor((Math.random() * 6) + 1);
-var certno = Math.floor((Math.random() * 10) + 1);
-
-var img2 = loadImage('img/frame/'+ frameno + '.png', main);
-var img1 = loadImage('". $src . "', main);
-var img3 = loadImage('img/frame/cert'+ certno + '.png', main);
+var img2 = loadImage('img/fram2bk.png', main);
+var img1 = loadImage('img/fram2.png', main);
+var img3 = loadImage('". $src . "', main);
 var text = '" .$_SESSION['userSession_username']. "';
 var Regcode = 'UWR /" .$_SESSION['userSession']. "';
 
@@ -96,17 +94,13 @@ function main() {
         // composite now
        
 ctx.fillStyle='#000';
-ctx.font='bold 17px Agency FB';
-
-         
-        ctx.drawImage(img1, 40, 75);
-        ctx.globalAlpha = 0.3;
-           ctx.drawImage(img3, 50, 80);
-           
-       ctx.globalAlpha = 0.7;
+ctx.font='bold 14px Agency FB';       
+ 
         ctx.drawImage(img2, 0, 0);
-        ctx.fillText(text, 90, 260);
-        ctx.fillText(Regcode, 85, 280);
+        ctx.drawImage(img3, 73, 40); 
+           ctx.drawImage(img1, 50, 25);
+        ctx.fillText(text,85, 134);
+ 
     }
 }
 

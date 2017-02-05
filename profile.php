@@ -42,7 +42,7 @@
      
         <div class="navprof">
             
-           <a href="#" class="paynav" > <div class="contnav "> Make Payment </div></a> 
+           <a href="#" class="paynav" > <div class="contnav cnpos11"> Make Payment </div></a> 
          <a href="#" class="verifynav" >  <div class="contnav cnpos21"> Verify Payment </div></a> 
            <a href="#" class="badgenav"> <div class="contnav cnpos31"> Get Badge </div></a>
            
@@ -59,12 +59,13 @@
                             
                             
                             <h4> Payment Details </h4>
-                        <div>    <span> Bank Name </span>  GTBank  </div>
-                              <div>      <span>Account Number </span> 0111480288 </div>
+                        <div>    <span> Bank/Name </span>  GTBank/Global Corporate Health System <span>Account Number </span> 0160241162 </div>
+                              <div>      <span> Bank/Name </span>  UBA/Global Corporate Health System <span>Account Number </span> 1019898859  </div>
                                 
                        </div>
-                       <div class="veri"> Send a SMS in this format { Name - Reg.No - DateofPayment} to 08068492563 <br>
-                        e.g Oluyege Paul - UWR/00001/PYT - Feb 1</div>
+                      
+                       <div class="veri"> <strong>Note: </strong>After payment, Send a SMS in this format for payment verification. { Name - Reg.No - DateofPayment} to 08068492563 <br>
+                        e.g (Oluyege Paul - UWR/00001/PYT - Feb 1)</div>
                 </div> 
             
             
@@ -103,12 +104,16 @@
     $(".pay").show();
    $(".verify").hide();
    $(".badge").hide();
+   $(".cnpos11").addClass("navactive");
     
     $(".paynav").on("click", function(){
        
             $(".pay").show();
    $(".verify").hide();
    $(".badge").hide();
+    $(".cnpos11").addClass("navactive");
+   $(".cnpos21").removeClass("navactive"); 
+   $(".cnpos31").removeClass("navactive");
     });
     
      $(".verifynav").on("click", function(){
@@ -116,6 +121,9 @@
     $(".pay").hide();
    $(".verify").show();
    $(".badge").hide();
+   $(".cnpos21").addClass("navactive");
+   $(".cnpos11").removeClass("navactive"); 
+   $(".cnpos31").removeClass("navactive");
     });
     
   $(".badgenav").on("click", function(){
@@ -123,6 +131,9 @@
             $(".pay").hide();
    $(".verify").hide();
    $(".badge").show();
+    $(".cnpos31").addClass("navactive");
+   $(".cnpos21").removeClass("navactive"); 
+   $(".cnpos11").removeClass("navactive");
     });
       $("#veribtn").val("<?php echo $_SESSION['userSession_status']; ?>"); 
       

@@ -9,7 +9,7 @@
 
     </style>
     <body>
-        <canvas width="306" height="405" id="canvas">Hello</canvas>
+        <canvas width="349" height="563" id="canvas">Hello</canvas>
     </body>
 </html>
 
@@ -18,15 +18,14 @@
 <script>
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
-
+/*
 var frameno = Math.floor((Math.random() * 6) + 1);
 var certno = Math.floor((Math.random() * 10) + 1);
-
-var img2 = loadImage('img/frame/fram'+ frameno + '.png', main);
-var img1 = loadImage('img/frame/ay1.jpg', main);
+*/
+var img2 = loadImage('img/frambk.png', main);
+var img1 = loadImage('img/fram.png', main);
 //var img3 = loadImage('img/frame/cert'+ certno + '.png', main);
 var text = "Paulapps";
-var Regcode = "UWR/0001";
 
 var imagesLoaded = 0;
 function main() {
@@ -39,14 +38,12 @@ ctx.fillStyle="#000";
 ctx.font="bold 14px Agency FB";
 
           //ctx.globalAlpha = 0.8;
-        ctx.drawImage(img1, 55, 35);
-      
+     
           // ctx.drawImage(img3, 90, 120);
-           
-      
+
         ctx.drawImage(img2, 0, 0);
+           ctx.drawImage(img1, 70, 25);
         ctx.fillText(text, 205, 250);
-        ctx.fillText(Regcode, 200, 270);
     }
 }
 
