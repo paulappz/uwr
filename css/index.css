@@ -484,13 +484,13 @@ font-family: 'Jura', sans-serif;
     width:300px;
     margin: 0 auto;
     font-family: 'Jura', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     margin-top:20px;
     color:white;
     text-align: center;}
 
-    copy{
-    width:200px;
+    .copy{
+    font-size:14px;
     }
  .subscribe .info input,  .subscribe .enter input{
 
