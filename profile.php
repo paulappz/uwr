@@ -64,9 +64,10 @@
                                 
                        </div>
                       
-                       <div class="veri"> <strong>Note: </strong>After payment, Send a SMS in this format for payment verification. { Name - Reg.No - DateofPayment} to 08068492563 <br>
+                       <div class="veri"> <strong>Note: </strong>After payment, Send a SMS  to 09064826556 in this format for payment verification. { Name - Reg.No - DateofPayment} to 08068492563 <br>
                         e.g (Oluyege Paul - UWR/00001/PYT - Feb 1)</div>
                 </div> 
+            
             
             
             <div class="cont verify " style="display:none" >
@@ -142,7 +143,7 @@
          $("a#veribtn").text('Verified!');  }
 
      else {
-             $("div.Redstatus").text('Your Payment hasnt been verified, Send your payment details in a Text to 08068492563');
+             $("div.Redstatus").text('Your Payment hasnt been verified, Send your payment details in a Text to 09064826556');
              $("a#veribtn").text('Not Verified');
              $(".badgenav").on("click", function(){
        
